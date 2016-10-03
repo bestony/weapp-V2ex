@@ -1,6 +1,20 @@
 <view>
-{{datas}}
+  <block  wx:for="{{datas}}">
+      <view class="listItem" catchtap="readDetial" id="{{item.id}}">
+        <view class="info">
+          <image class="avatar"  src="{{item.member.avatar_normal}}" ></image>
+          <text class="member"> {{ item.member.username }} </text>
+          <text class="reply"> {{ item.replies }} </text>
+        </view>
+        <view class="title">
+          <text> {{ item.title }} </text>
+        </view>
+        <view class="info">
+          <text class="node"> {{ item.node.title }} </text>
+        </view>
+      </view>
+  </block >
 </view>
-<view wx:for="{{datas}}">
-  {{index}}: {{item.name}}-{{item.subject}}
-</view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
