@@ -1,0 +1,6 @@
+<view>
+{{datas}}
+</view>
+<view wx:for="{{datas}}">
+  {{index}}: {{item.name}}-{{item.subject}}
+</view>

@@ -1,0 +1,22 @@
+<view>
+  <view class="header">
+    <text class="title">{{datas.title}}</text>
+    <text class="reply">{{datas.replies}}</text>
+  </view>
+  <view class="body">
+    <text class="content">{{datas.content}}</text>
+  </view>
+  <view class="info">
+   <text class="node">{{datas.node.title}}</text>
+  </view>
+  <view class="userinfo">
+    <view class="headinfo">
+       <image class="headimg" src="{{datas.member.avatar_normal}}"></image>
+       <text class="username">{{datas.member.username}}</text>
+    </view>
+  </view>
+
+</view>
+<loading hidden="{{hidden}}">
+    加载中...
+</loading>

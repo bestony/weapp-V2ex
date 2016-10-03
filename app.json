@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/new/new",
+    "pages/hot/hot",
+    "pages/node/node",
+    "pages/user/user",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "V2ex 小程序版",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+     "color":"#000",
+     "selectedColor":"#778087",
+     "backgroundColor":"#fff",
+     "borderStyle":"white",
+     "list":[
+       {
+         "pagePath":"pages/hot/hot",
+         "text":"首页",
+         "iconPath":"images/tabbar/indexhl.png",
+         "selectedIconPath":"images/tabbar/index.png"
+       },
+       {
+         "pagePath":"pages/new/new",
+         "text":"最新",
+         "iconPath":"images/tabbar/newhl.png",
+         "selectedIconPath":"images/tabbar/new.png"
+       }
+     ]
+  }
+}
