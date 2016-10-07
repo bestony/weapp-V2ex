@@ -13,10 +13,10 @@
     </view>
 
     
-    <loading hidden="{{loading}}">
+    <loading hidden="{{loadingHidden}}">
         加载中...
     </loading>
-    <modal title="啊哦！" confirm-text="重新加载！" no-cancel  hidden="{{modal}}" bindconfirm="Request">
+    <modal title="啊哦！" confirm-text="重新加载！" no-cancel  hidden="{{modalHidden}}" bindconfirm="Request">
         <icon type="warn" size="20" />加载失败！
     </modal>
 </view>

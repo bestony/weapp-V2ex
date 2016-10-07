@@ -1,8 +1,8 @@
 Page( {
     data: {
         datas: [],
-        loading: false,
-        modal: true,
+        loadingHidden: true,
+        modalHidden: true,
     },
     onLoad: function( options ) {
         var that = this;
@@ -11,19 +11,23 @@ Page( {
     },
     Request: function() {
         var that = this;
+        that.setData({
+            loadingHidden: false,
+            modalHidden: true,
+        });
         wx.request( {
             url: "https://www.v2ex.com/api/topics/hot.json",
             success: function( data ) {
                 that.setData( {
                     datas: data.data,
-                    loading: true,
-                    modal: true,
+                    loadingHidden: true,
+                    modalHidden: true,
                 })
             },
             fail: function( data ) {
                 that.setData( {
-                    loading: true,
-                    modal: false
+                    loadingHidden: true,
+                    modalHidden: false
                 })
             }
         })
