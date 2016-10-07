@@ -20,6 +20,7 @@ Page( {
       },
       fail: function( data ) {
         that.setData( {
+          loading: true,
           modal: false
         })
       }
